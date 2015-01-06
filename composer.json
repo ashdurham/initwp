@@ -1,0 +1,53 @@
+{
+    "name": "initwp/matterdesign",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        },{
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.1",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.1.zip"
+                },
+                "require" : {
+                  "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wptheme/sass-skeleton",
+                "type": "wordpress-theme",
+                "version": "1.0",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/MatterDesignStudio/wp-sass-skeleton-theme/archive/1.0.zip"
+                },
+                "require" : {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "wordpress": "4.1",
+        "wptheme/sass-skeleton": "1.0",
+        "wpackagist-plugin/woocommerce": "dev-trunk",
+        "wpackagist-plugin/advanced-custom-fields": "dev-trunk",
+        "wpackagist-plugin/contact-form-7": "dev-trunk"
+    },
+    "extra": {
+        "webroot-dir": "wp",
+        "webroot-package": "wordpress",
+        "installer-paths": {
+            "wp/wp-content/themes/custom/": ["type:wordpress-theme"],
+            "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
