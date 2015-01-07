@@ -14,6 +14,12 @@ module.exports = function(grunt) {
 //                        return content.replace(/wp\-/g, "wp/wp-");
 //                    }
 //                }
+            },
+            wp_config: {
+                expand: true,
+                cwd: '/',
+                src: ['wp-content/themes/custom/root/wp-config.php'],
+                dest: './'
             }
         }
     });
@@ -30,6 +36,7 @@ module.exports = function(grunt) {
         grunt.file.delete('.git/');
         grunt.file.delete('wp/');
         grunt.file.delete('vendor/');
+        grunt.file.delete('wp-config-sample.php');
         grunt.file.delete('composer.json');
         grunt.file.delete('composer.lock');
         grunt.file.delete('package.json');
