@@ -21,7 +21,8 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'wp-content/themes/custom/root/',
                 src: ['*'],
-                dest: './'
+                dest: './',
+                dot: true
             }
         }
     });
