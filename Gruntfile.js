@@ -20,7 +20,7 @@ module.exports = function(grunt) {
             root: {
                 expand: true,
                 cwd: 'wp-content/themes/custom/root/',
-                src: ['wp-config.php', '.htaccess'],
+                src: ['*'],
                 dest: './'
             }
         }
