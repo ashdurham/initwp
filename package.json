@@ -1,0 +1,32 @@
+{
+  "name": "initwp",
+  "version": "0.0.1",
+  "description": "Init WP",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-php": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MatterDesignStudio/initwp.git"
+  },
+  "keywords": [
+    "Wordpress",
+    "Development",
+    "launchpad",
+    "workflow"
+  ],
+  "author": "ashdurham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatterDesignStudio/initwp/issues"
+  },
+  "homepage": "https://github.com/MatterDesignStudio/initwp"
+}
