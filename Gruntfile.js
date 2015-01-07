@@ -17,10 +17,10 @@ module.exports = function(grunt) {
 //                    }
 //                }
             },
-            wp_config: {
+            root: {
                 expand: true,
                 cwd: 'wp-content/themes/custom/root/',
-                src: ['wp-config.php'],
+                src: ['wp-config.php', '.htaccess'],
                 dest: './'
             }
         }
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['copy:wp', 'copy:wp_config', 'update_wp_paths']);
+    grunt.registerTask('default', ['copy:wp', 'copy:root', 'update_wp_paths']);
 
     grunt.registerTask('update_wp_paths', function() {
         
