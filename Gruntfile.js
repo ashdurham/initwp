@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+    
+    var path = require("path").resolve(".");
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -26,12 +28,9 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['copy:wp', 'update_wp_paths']);
+    grunt.registerTask('default', ['copy:wp', 'copy:wp_config', 'update_wp_paths']);
 
     grunt.registerTask('update_wp_paths', function() {
-
-        var fs = require('fs');
-        var path = require('path');
         
         grunt.file.delete('.git/');
         grunt.file.delete('wp/');
@@ -41,7 +40,7 @@ module.exports = function(grunt) {
         grunt.file.delete('composer.lock');
         grunt.file.delete('package.json');
         grunt.file.delete('readme.md');
-        grunt.file.delete('Gruntfile.js');
         grunt.file.delete('node_modules/');
+        grunt.file.delete('Gruntfile.js');
     });
 }
