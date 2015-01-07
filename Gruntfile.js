@@ -10,7 +10,8 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'wp/',
                 src: ['**/*'],
-                dest: './'
+                dest: './',
+                dot: true
 //                options: {
 //                    process: function(content, srcpath) {
 //                        return content.replace(/wp\-/g, "wp/wp-");
