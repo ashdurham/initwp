@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         
         grunt.file.delete('.git/');
         grunt.file.delete('wp/');
-        grunt.file.delete('vender/');
+        grunt.file.delete('vendor/');
         grunt.file.delete('composer.json');
         grunt.file.delete('composer.lock');
         grunt.file.delete('package.json');
