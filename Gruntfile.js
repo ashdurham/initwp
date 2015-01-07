@@ -45,6 +45,11 @@ module.exports = function(grunt) {
         grunt.file.delete('node_modules/');
         grunt.file.delete('Gruntfile.js');
         grunt.file.delete('wp-content/themes/custom/root/');
-        grunt.file.delete('wp-content/themes/twenty*/');
+        grunt.file.delete('wp-content/themes/twentyten/');
+        grunt.file.delete('wp-content/themes/twentyeleven/');
+        grunt.file.delete('wp-content/themes/twentytwelve/');
+        grunt.file.delete('wp-content/themes/twentythirteen/');
+        grunt.file.delete('wp-content/themes/twentyfourteen/');
+        grunt.file.delete('wp-content/themes/twentyfifteen/');
     });
 }
