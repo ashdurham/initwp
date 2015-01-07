@@ -17,8 +17,8 @@ module.exports = function(grunt) {
             },
             wp_config: {
                 expand: true,
-                cwd: '/',
-                src: ['wp-content/themes/custom/root/wp-config.php'],
+                cwd: 'wp-content/themes/custom/root/',
+                src: ['wp-config.php'],
                 dest: './'
             }
         }
