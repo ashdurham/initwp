@@ -44,5 +44,7 @@ module.exports = function(grunt) {
         grunt.file.delete('readme.md');
         grunt.file.delete('node_modules/');
         grunt.file.delete('Gruntfile.js');
+        grunt.file.delete('wp-content/themes/custom/root/');
+        grunt.file.delete('wp-content/themes/twenty*/');
     });
 }
