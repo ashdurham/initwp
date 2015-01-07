@@ -24,10 +24,10 @@
             "package": {
                 "name": "wptheme/sass-skeleton",
                 "type": "wordpress-theme",
-                "version": "1.0",
+                "version": "1.1",
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/MatterDesignStudio/wp-sass-skeleton-theme/archive/1.0.zip"
+                    "url": "https://github.com/MatterDesignStudio/wp-sass-skeleton-theme/archive/1.1.zip"
                 },
                 "require" : {
                     "composer/installers": "~1.0"
@@ -37,7 +37,7 @@
     ],
     "require": {
         "wordpress": "4.1",
-        "wptheme/sass-skeleton": "1.0",
+        "wptheme/sass-skeleton": "1.1",
         "wpackagist-plugin/woocommerce": "dev-trunk",
         "wpackagist-plugin/advanced-custom-fields": "dev-trunk",
         "wpackagist-plugin/contact-form-7": "dev-trunk"
