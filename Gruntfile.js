@@ -7,7 +7,7 @@ module.exports = function(grunt) {
             wp: {
                 expand: true,
                 cwd: 'wp/',
-                src: ['*'],
+                src: ['**/*'],
                 dest: './'
 //                options: {
 //                    process: function(content, srcpath) {
@@ -29,9 +29,12 @@ module.exports = function(grunt) {
         
         grunt.file.delete('.git/');
         grunt.file.delete('wp/');
+        grunt.file.delete('vender/');
         grunt.file.delete('composer.json');
+        grunt.file.delete('composer.lock');
         grunt.file.delete('package.json');
         grunt.file.delete('readme.md');
         grunt.file.delete('Gruntfile.js');
+        grunt.file.delete('node_modules/');
     });
 }
