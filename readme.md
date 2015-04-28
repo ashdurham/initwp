@@ -24,7 +24,7 @@ Who wants to type all those commands everytime you want to create a project righ
 
 ```bash
 initwp() {
-    git clone https://github.com/MatterDesignStudio/initwp.git $1;
+    git clone https://github.com/ashdurham/initwp.git $1;
     cd $1;
     composer install --prefer-dist -vvv --profile;
     npm install;
@@ -36,13 +36,13 @@ If you find your on a machine that has permission issues when running this, try 
 
 ```bash
 initwp() {
-    git clone https://github.com/MatterDesignStudio/initwp.git $1;
+    git clone https://github.com/ashdurham/initwp.git $1;
     cd $1;
     sudo composer install --prefer-dist -vvv --profile;
     sudo npm install;
     sudo grunt;
     cd ..;
-    sudo chown -R newcaledonia:admin $1;
+    sudo chown -R owner:user $1;
     cd $1;
 }
 ```

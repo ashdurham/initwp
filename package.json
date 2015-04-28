@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:MatterDesignStudio/initwp.git"
+    "url": "git@github.com:ashdurham/initwp.git"
   },
   "keywords": [
     "Wordpress",
@@ -26,7 +26,7 @@
   "author": "ashdurham",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MatterDesignStudio/initwp/issues"
+    "url": "https://github.com/ashdurham/initwp/issues"
   },
-  "homepage": "https://github.com/MatterDesignStudio/initwp"
+  "homepage": "https://github.com/ashdurham/initwp"
 }
